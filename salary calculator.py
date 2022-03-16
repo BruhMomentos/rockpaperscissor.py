@@ -11,6 +11,8 @@ if hour > 40:
 else:
     print("You worked a regular pay of $" + spay)
 
+input("Press key to close")
+
 
 
 
