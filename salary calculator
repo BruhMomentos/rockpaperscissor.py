@@ -1,7 +1,6 @@
 
 hours = int(input("Enter the amount of hours you work "))
-rate = int(input("Enter your rate of pay "))
-
+rate = int(input("Enter your rate of pay ")
 pay = hours * rate
 spay = str(pay)
 
