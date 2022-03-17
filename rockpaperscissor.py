@@ -1,14 +1,25 @@
 import random
 
-replay_amount = int(input("How many times do you want to face the bot: "))
+try:
+    replay_amount = int(input("How many times do you want to face the bot: "))
+except:
+    print("Please Enter a Numeric Input")
+    quit()
 
 player_score = 0
 computer_score = 0
+
+possible_playerchoice = ["rock", "scissor", "paper"]
 
 for tries in range(replay_amount):
 
     print("                                                     ")
     user_choice = input("First Player: rock, paper, Or scissor: ")
+
+    if user_choice not in possible_playerchoice:
+        print("Please enter rock paper or scissor with no uppercase's")
+        quit()
+
     possible_actions = ["rock", "paper", "scissors"]
 
     big_brainpc = random.choice(possible_actions)
